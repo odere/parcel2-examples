@@ -1,0 +1,32 @@
+{
+  "name": "parcel2-examples",
+  "version": "1.0.0",
+  "main": "packages/server/index.js",
+  "license": "MIT",
+  "private": true,
+  "author": "odere",
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/odere/parcel2-examples.git"
+  },
+  "scripts": {
+    "build": "yarn rimraf && lerna run build --stream",
+    "dev": "yarn rimraf && yarn kill-port && lerna run dev --stream",
+    "kill-port": "kill-port --port 3001,3002,3003",
+    "rimraf": "lerna exec rimraf ./dist",
+    "start": "yarn rimraf && yarn kill-port && lerna run start --stream",
+    "inspect-bundle-health": "yarn rimraf && lerna run inspect-bundle-health --parallel",
+    "update-wizard": "lernaupdate"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "lerna-update-wizard": "^0.17.8",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "kill-port": "^1.6.1"
+  }
+}
