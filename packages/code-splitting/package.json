@@ -1,0 +1,23 @@
+{
+  "name": "@parcel2-examples/code-splitting",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./dist/index.html",
+  "scripts": {
+    "build": "env-cmd parcel build ./src/index.html",
+    "dev": "env-cmd parcel serve ./src/index.html",
+    "inspect-bundle-health": "cross-env BUNDLE_BUDDY=true NODE_ENV=production parcel build src/index.html --reporter @parcel/reporter-bundle-buddy",
+    "start": "env-cmd parcel serve ./src/index.html --open"
+  },
+  "devDependencies": {
+    "@parcel/reporter-bundle-analyzer": "^2.0.0-nightly.1694",
+    "@parcel/reporter-bundle-buddy": "^2.0.0-nightly.1902",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "parcel": "2.0.0-nightly.674"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
