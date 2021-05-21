@@ -1,5 +1,5 @@
 {
-  "name": "@parcel2-examples/code-splitting",
+  "name": "@odere/code-splitting",
   "version": "1.0.0",
   "license": "MIT",
   "main": "./dist/index.html",
