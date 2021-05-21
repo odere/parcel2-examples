@@ -1,0 +1,19 @@
+{
+  "name": "@odere/generic-web-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./dist/index.html",
+  "scripts": {
+    "build": "env-cmd parcel build ./src/index.html",
+    "dev": "env-cmd parcel serve ./src/index.html ",
+    "start": "env-cmd parcel serve ./src/index.html --open"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "parcel": "2.0.0-nightly.674"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
